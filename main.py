@@ -4,21 +4,34 @@ from tkinter import ttk
 
 # Define the function to start the game
 def start_game():
-    print("Starting game...")
+    # Create the game window
+    game_window = tk.Toplevel(window)
+    game_window.title("My Game")
+    
+    # Create the game content
+    game_label = tk.Label(game_window, text="iWord Hunt!", font=("Inter", 24), bg="blue", width=400, height=300)
+    game_label.pack(pady=20)
+    
+    # Hide the main menu window
+    window.withdraw()
 
 def option_page():
     print("1.Language 2.Volume")
+
+# # Set the dimensions of the window
+# canvas = tk.Canvas(window, width=600, height=400)
+# canvas.pack()
+
+# #  Load the background image
+# bg_image = tk.PhotoImage(file = "eid.png")
+
+# # Create the background image
+# canvas.create_image(0, 0, anchor="nw", image=bg_image)
 
 # Create the main window
 window = tk.Tk()
 window.geometry('600x400')
 window.title("Game Menu")
-
-#background
-# canvas = tk.Canvas(window, width=1200, height=900)
-# canvas.pack()
-# bg_image = tk.PhotoImage(file = "eid.png")
-# canvas.create_image(0, 0, anchor = "nw", image=bg_image)
 
 # Create a label for the title
 title_label = tk.Label(window, text="iWord Hunt!", font=("Inter", 24))
