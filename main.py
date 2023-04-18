@@ -1,6 +1,8 @@
 # import
 import tkinter as tk
 from tkinter import ttk
+from pydub import AudioSegment
+from pydub.playback import play
 
 # Define the function to start the game
 def start_game():
@@ -18,6 +20,7 @@ def start_game():
 def option_page():
     print("1.Language 2.Volume")
 
+
 # # Set the dimensions of the window
 # canvas = tk.Canvas(window, width=600, height=400)
 # canvas.pack()
@@ -32,6 +35,8 @@ def option_page():
 window = tk.Tk()
 window.geometry('600x400')
 window.title("Game Menu")
+
+
 
 # Create a label for the title
 title_label = tk.Label(window, text="iWord Hunt!", font=("Inter", 24))
@@ -51,3 +56,14 @@ exit_button.pack(pady=10)
 
 # Start the main event loop
 window.mainloop()
+
+
+
+
+
+# Load and play song
+# def play_song():
+#     play(song)
+#     window.after(len(song), play_song)
+# song = AudioSegment.from_mp3("sdhr.mp3")
+# play_song()
