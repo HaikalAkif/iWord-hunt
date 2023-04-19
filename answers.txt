@@ -1,0 +1,15 @@
+asr
+fajr
+fast
+iftar
+isha
+maghrib
+qadr
+ramadan
+shawal
+suhoor
+takbir
+taqwa
+tarawih
+zakat
+zuhr
