@@ -1,8 +1,9 @@
 # import
 import tkinter as tk
-from tkinter import ttk
+from tkinter import *
 from pydub import AudioSegment
 from pydub.playback import play
+from PIL import ImageTk, Image
 
 # Define the function to start the game
 def start_game():
@@ -18,7 +19,16 @@ def start_game():
     window.withdraw()
 
 def option_page():
+    # Create option window
+    game_option = tk.Toplevel(window)
+    game_option.title("Game Option")
+
+    # Create option content
+    game_label = tk.Label(game_option, text="Game Option", font=("Inter", 24), bg="green", fg="black", width=400, height=300)
     print("1.Language 2.Volume")
+
+    # Hide the main menu window
+    window.withdraw()
 
 
 # # Set the dimensions of the window
@@ -30,6 +40,7 @@ def option_page():
 
 # # Create the background image
 # canvas.create_image(0, 0, anchor="nw", image=bg_image)
+# x jadi
 
 # Create the main window
 window = tk.Tk()
@@ -66,4 +77,4 @@ window.mainloop()
 #     play(song)
 #     window.after(len(song), play_song)
 # song = AudioSegment.from_mp3("sdhr.mp3")
-# play_song()
+# play_song() xjadi
