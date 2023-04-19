@@ -24,7 +24,7 @@ def option_page():
     game_option.title("Game Option")
 
     # Create option content
-    game_label = tk.Label(game_option, text="Game Option", font=("Inter", 24), bg="green", fg="black", width=400, height=300)
+    game_option_label = tk.Label(game_option, text="Game Option", font=("Inter", 24), bg="green", fg="black", width=400, height=300)
     print("1.Language 2.Volume")
 
     # Hide the main menu window
