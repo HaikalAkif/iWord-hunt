@@ -30,22 +30,29 @@ def option_page():
     # Hide the main menu window
     window.withdraw()
 
-
-# # Set the dimensions of the window
-# canvas = tk.Canvas(window, width=600, height=400)
-# canvas.pack()
-
-# #  Load the background image
-# bg_image = tk.PhotoImage(file = "eid.png")
-
-# # Create the background image
-# canvas.create_image(0, 0, anchor="nw", image=bg_image)
-# x jadi
+#Load and play song
+# def play_song():
+#     play(song)
+#     window.after(len(song), play_song)
 
 # Create the main window
 window = tk.Tk()
 window.geometry('600x400')
 window.title("Game Menu")
+
+# song = AudioSegment.from_mp3("sdhr.mp3")
+# play_song() 
+# # Set the dimensions of the window
+canvas = tk.Canvas(window, width=600, height=400)
+canvas.pack()
+
+# #  Load the background image
+bg_image = tk.PhotoImage(file = "eid.png")
+
+# # Create the background image
+canvas.create_image(0, 0, anchor="nw", image=bg_image)
+# x jadi
+
 
 
 
@@ -72,9 +79,6 @@ window.mainloop()
 
 
 
-# Load and play song
-# def play_song():
-#     play(song)
-#     window.after(len(song), play_song)
-# song = AudioSegment.from_mp3("sdhr.mp3")
-# play_song() xjadi
+
+
+# xjadi
