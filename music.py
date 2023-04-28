@@ -4,7 +4,7 @@ from pydub.playback import play
 import multiprocessing
 
 class MusicUtil:
-    def init__(self, music_path):
+    def __init__(self, music_path):
         self.music_path = music_path
         self.music_process = None
 
